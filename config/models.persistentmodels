@@ -11,15 +11,11 @@ Email
     userId UserId Maybe
     verkey Text Maybe
     UniqueEmail email
-Comment json -- Adding "json" causes ToJSON and FromJSON instances to be derived.
-    message Text
-    userId UserId Maybe
-    deriving Eq
-    deriving Show
 Transaction json
     amount Int
-    description Text
+    message Text
     date Text
     category Text
     userId UserId Maybe
+    deriving Show
 
